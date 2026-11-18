@@ -1,0 +1,14 @@
+# Reference configuration. The current training CLI accepts these as flags.
+image_size: 512
+num_landmarks: 19
+batch_size: 2
+epochs: 80
+learning_rate: 0.0001
+validation_ratio: 0.20
+random_seed: 42
+heatmap_sigma: 5.0
+optimizer: AdamW
+weight_decay: 0.0001
+loss:
+  heatmap_mse_weight: 1.0
+  offset_l1_weight: 0.01
